@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Менің алғашқы сайтым</title>
-</head>
-<body>
-    <h1>Алақай! Менің бірінші жасаған сайтым!</h1>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="kk">
-<head>
-    <meta charset="UTF-8">
-    <title>Менің алғашқы сайтым</title>
 
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background: linear-gradient(135deg, #4facfe, #00f2fe);
             font-family: Arial, sans-serif;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         h1 {
@@ -33,10 +25,64 @@
             border-radius: 15px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 1.5em;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .buttons a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.5);
         }
     </style>
 </head>
 <body>
     <h1>Алақай! Менің бірінші жасаған сайтым!</h1>
+
+    <section class="section">
+        <h2>История Казахстана</h2>
+        <div class="buttons">
+            <a href="#">5-сынып</a>
+            <a href="#">6-сынып</a>
+            <a href="#">7-сынып</a>
+            <a href="#">8-сынып</a>
+            <a href="#">9-сынып</a>
+            <a href="#">10-сынып</a>
+            <a href="#">11-сынып (ЕНТ)</a>
+        </div>
+    </section>
 </body>
 </html>
