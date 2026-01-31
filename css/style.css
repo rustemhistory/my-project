@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 600px;
+}
+
+.section h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(79, 172, 254, 0.6), 0 0 30px rgba(79, 172, 254, 0.4);
+}
+
+/* Большая кнопка входа на главной */
+.btn-enter {
+    display: inline-block;
+    padding: 20px 48px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.45);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-enter:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(79, 172, 254, 0.55), 0 0 40px rgba(79, 172, 254, 0.35);
+}
+
+.btn-logout {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-logout:hover {
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Форма входа */
+.auth-form-wrapper {
+    max-width: 380px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.auth-form label {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.auth-form input {
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #4facfe;
+}
+
+.auth-form .btn-login {
+    margin-top: 8px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.auth-form .btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(79, 172, 254, 0.6), 0 0 30px rgba(79, 172, 254, 0.4);
+}
